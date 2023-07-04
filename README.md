@@ -1,10 +1,20 @@
-# Self-supervised Learning Through Efference Copies
+# S-TEC
+## Self-supervised Learning Through Efference Copies
 
-This repository is the official implementation of [Self-supervised Learning Through Efference Copies (S-TEC)](https://proceedings.neurips.cc/paper_files/paper/2022/hash/1d1cea122b9ec9f78acc21510659e500-Abstract-Conference.html), accepted at NeurIPS 2022.
+This repository is the official code implementation of [this NeurIPS 2022 paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/1d1cea122b9ec9f78acc21510659e500-Abstract-Conference.html).
+
+_Authors:_ Franz Scherr, Qinghai Guo, Timoleon Moraitis
+
+_Keywords:_ Self-supervised Learning, Theoretical Neuroscience, Sensory-Motor Learning, Representation Learning, Visual Features, Visual Perception, Deep Learning, Neural Networks, Embodied Intelligence, Inverse Models
+
+_TL;DR:_ We show, the brain's motor commands could theoretically also offer supervision to the learning process of sensory representations, a framework that also unifies various self-supervised machine-learning methods, extends them and improves performance.
+
+## Abstract
+Self-supervised learning (SSL) methods aim to exploit the abundance of unlabelled data for machine learning (ML), however the underlying principles are often method-specific. An SSL framework derived from biological first principles of embodied learning could unify the various SSL methods, help elucidate learning in the brain, and possibly improve ML. SSL commonly transforms each training datapoint into a pair of views, uses the knowledge of this pairing as a positive (i.e. non-contrastive) self-supervisory sign, and potentially opposes it to unrelated, (i.e. contrastive) negative examples. Here, we show that this type of self-supervision is an incomplete implementation of a concept from neuroscience, the Efference Copy (EC). Specifically, the brain also transforms the environment through efference, i.e. motor commands, however it sends to itself an EC of the full commands, i.e. more than a mere SSL sign. In addition, its action representations are likely egocentric. From such a principled foundation we formally recover and extend SSL methods such as SimCLR, BYOL, and ReLIC under a common theoretical framework, i.e. Self-supervision Through Efference Copies (S-TEC). Empirically, S-TEC restructures meaningfully the within- and between-class representations. This manifests as improvement in recent strong SSL baselines in image classification, segmentation, object detection, and in audio. These results hypothesize a testable positive influence from the brain's motor outputs onto its sensory representations.
 
 ## Requirements
 
-To install requirements:
+To install the requirements:
 
 ```setup
 pip install -r requirements.txt
@@ -90,3 +100,16 @@ python eval.py --dataset cifar100 --data_dir <path-to-data> --arch resnet18 \
 ```
 
 It should print `0.6540` (i.e. `65.40%`).
+
+
+## Cite
+To cite this work, please use the following reference:
+
+    @article{scherr2022self,
+      title={Self-supervised learning through efference copies},
+      author={Scherr, Franz and Guo, Qinghai and Moraitis, Timoleon},
+      journal={Advances in Neural Information Processing Systems},
+      volume={35},
+      pages={4543--4557},
+      year={2022}
+    }
