@@ -1,5 +1,4 @@
-# S-TEC
-## Self-supervised Learning Through Efference Copies
+# Self-supervised Learning Through Efference Copies (S-TEC)
 
 This repository is the official code implementation of [this NeurIPS 2022 paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/1d1cea122b9ec9f78acc21510659e500-Abstract-Conference.html).
 
