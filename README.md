@@ -1,4 +1,5 @@
 # Self-supervised Learning Through Efference Copies (S-TEC)
+_This open source project is not an official Huawei product. Huawei is not expected to provide support for this project._
 
 This repository is the official code implementation of [this NeurIPS 2022 paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/1d1cea122b9ec9f78acc21510659e500-Abstract-Conference.html).
 
